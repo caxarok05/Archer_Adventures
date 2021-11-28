@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn_delay: 0.005
   prefab: {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
-  spawn_point_1: {fileID: 4503146732966326052}
+  spawn_point: {fileID: 4503146732966326052}
   volume: {x: 0, y: 0, z: 150}
   spawn_count: 10
 --- !u!1 &489373143818627300
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn_delay: 0.005
   prefab: {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
-  spawn_point_1: {fileID: 2437263719150834194}
+  spawn_point: {fileID: 2437263719150834194}
   volume: {x: 0, y: 0, z: 150}
   spawn_count: 10
 --- !u!1 &489373144463959870
@@ -413,7 +413,6 @@ GameObject:
   - component: {fileID: 489373144463959865}
   - component: {fileID: 489373144463959864}
   - component: {fileID: 489373144463959871}
-  - component: {fileID: 1059885707399329123}
   m_Layer: 0
   m_Name: Plane around
   m_TagString: Untagged
@@ -498,23 +497,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1059885707399329123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489373144463959870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de34574971fb69f419b2ec5a85dac317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawn_delay: 0.005
-  prefab: {fileID: 0}
-  spawn_point_1: {fileID: 0}
-  volume: {x: 0, y: 0, z: 0}
-  spawn_count: 10
 --- !u!1 &2749847644481160920
 GameObject:
   m_ObjectHideFlags: 0

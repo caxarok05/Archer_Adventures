@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     
 
-        public GameObject player; // тут объект игрока
+        public GameObject player; // there is a player object
         private Vector3 offset;
 
         void Start()

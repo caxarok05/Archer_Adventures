@@ -133,7 +133,7 @@ MonoBehaviour:
   prefab: {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
   spawn_point: {fileID: 4503146732966326052}
   volume: {x: 0, y: 0, z: 150}
-  spawn_count: 10
+  spawn_count: 5
 --- !u!1 &489373143818627300
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +400,7 @@ MonoBehaviour:
   prefab: {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
   spawn_point: {fileID: 2437263719150834194}
   volume: {x: 0, y: 0, z: 150}
-  spawn_count: 10
+  spawn_count: 5
 --- !u!1 &489373144463959870
 GameObject:
   m_ObjectHideFlags: 0

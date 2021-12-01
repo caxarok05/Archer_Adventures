@@ -69,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4140bd0a1a20eb04da8e683ea2202b9c, type: 3}
       propertyPath: m_Name
-      value: blue flower  Variant
+      value: white flower  Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4140bd0a1a20eb04da8e683ea2202b9c, type: 3}
       propertyPath: m_TagString

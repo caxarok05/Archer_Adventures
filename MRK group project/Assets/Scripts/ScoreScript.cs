@@ -7,8 +7,15 @@ public class ScoreScript : MonoBehaviour
 {
     public int score;
 
+    public static ScoreScript Instance;
+
     public Text ScoreText;
- 
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Update()
     {
         ScoreText.text = "Score: " + score;

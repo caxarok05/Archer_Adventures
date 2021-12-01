@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class LocalTouchHandler : MonoBehaviour
 {
-    ScoreScript ScoreScript;
-    void Start()
+    
+
+    void OnMouseDown()
     {
-        ScoreScript = Camera.main.GetComponent<ScoreScript>();
-    }
-    void OnMouseButton()
-    {
-        ScoreScript.score++;
+        ScoreScript.Instance.score++;
         Destroy(gameObject);
     }
 }

@@ -8,7 +8,7 @@ public class EnemyDestroyer : MonoBehaviour
 
     private void Start()
     {
-        Player_prefab = GameObject.Find("Capsule");
+        Player_prefab = GameObject.Find("hero");
     }
     private void Update()
     {

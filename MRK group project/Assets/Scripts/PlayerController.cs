@@ -11,8 +11,4 @@ public class PlayerController : MonoBehaviour
     {
         transform.Translate(destinationPoint * Speed);
     }
-    
-        
-    
-
 }

@@ -8,10 +8,11 @@ public class EnvironmentDestroyer : MonoBehaviour
 
     private void Start()
     {
-        Player_prefab = GameObject.Find("hero");   
+        Player_prefab = GameObject.Find("Camera");
     }
     private void Update()
     {
+
         if (gameObject.transform.position.z + 30 < Player_prefab.transform.position.z)
         {
             Destroy(gameObject);

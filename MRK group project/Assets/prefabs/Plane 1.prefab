@@ -130,7 +130,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn_delay: 0.005
-  prefab: {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
+  prefab:
+  - {fileID: 3195552951275309726, guid: b1450095e5c8cd542bb7af8a77f55411, type: 3}
+  - {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
+  - {fileID: 8071065127211996149, guid: 2d81367b4c54ab7499af1e41ff47288f, type: 3}
+  - {fileID: 18630640271658135, guid: f4464a1fd497a0a43822ba3a79d07b77, type: 3}
   spawn_point: {fileID: 4503146732966326052}
   volume: {x: 0, y: 0, z: 150}
   spawn_count: 5
@@ -397,7 +401,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn_delay: 0.005
-  prefab: {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
+  prefab:
+  - {fileID: 18630640271658135, guid: f4464a1fd497a0a43822ba3a79d07b77, type: 3}
+  - {fileID: 8071065127211996149, guid: 2d81367b4c54ab7499af1e41ff47288f, type: 3}
+  - {fileID: 8511574132055919455, guid: a4a4eb71c15ebd44184bd63e6bdde231, type: 3}
+  - {fileID: 3195552951275309726, guid: b1450095e5c8cd542bb7af8a77f55411, type: 3}
   spawn_point: {fileID: 2437263719150834194}
   volume: {x: 0, y: 0, z: 150}
   spawn_count: 5
@@ -521,7 +529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2749847644481160920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8577793, y: 0.8797902, z: 35.012306}
+  m_LocalPosition: {x: 2.8577793, y: 1.37979, z: 35.012306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 489373143818627301}
@@ -581,7 +589,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7417081645054821232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.604756, y: 0.8797902, z: 35.012306}
+  m_LocalPosition: {x: -6.604756, y: 1.37979, z: 35.012306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 489373143818627301}

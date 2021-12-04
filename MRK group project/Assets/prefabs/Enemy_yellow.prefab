@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3195552951275309712}
   - component: {fileID: 3195552951275309713}
   - component: {fileID: 746600335994787448}
-  - component: {fileID: 2742669351469073739}
+  - component: {fileID: 6968299389082390600}
   m_Layer: 0
   m_Name: Enemy_yellow
   m_TagString: Untagged
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4d27c8d737c324baa6520df52833c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2742669351469073739
+--- !u!114 &6968299389082390600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

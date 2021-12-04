@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentDestroyer : MonoBehaviour
+public class ObjectDestroyer : MonoBehaviour
 {
     private GameObject Player_prefab;
 

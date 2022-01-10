@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class TileSpawner : MonoBehaviour
 {
-    public GameObject[] tilePrefabs;
+    [SerializeField] private GameObject[] tilePrefabs;
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
-    private float tileLength = 150;
+    private float tileLength = 40;
 
 
     [SerializeField] private Transform player;
-    private int startTiles = 5;
+    private int startTiles = 10;
 
-    //Start is called before the first frame update
+    
     void Start()
     {
         for (int i = 0; i < startTiles; i++)
@@ -22,7 +22,6 @@ public class TileSpawner : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (player.position.z - 55 > spawnPos - (startTiles * tileLength))
@@ -30,7 +29,7 @@ public class TileSpawner : MonoBehaviour
             //SpawnTile(Random.Range(0, tilePrefabs.Length));
             SpawnTile(0);
             Invoke("DeleteTile", 3f);
-            //DeleteTile();
+           
         }
     }
 
@@ -42,7 +41,6 @@ public class TileSpawner : MonoBehaviour
     }
     private void DeleteTile()
     {
-        
         Destroy(activeTiles[0]);
         activeTiles.RemoveAt(0);
     }

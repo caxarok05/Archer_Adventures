@@ -27,10 +27,14 @@ public class EnemySpawner : MonoBehaviour
         while (spawn_count > 0)
         {
             GameObject prefabs = prefab[Random.Range(0, prefab.Count)];
-            spawn_count--;
+              
             Vector3 pos = new Vector3(spawn_point.position.x, spawn_point.position.y, Random.Range(spawn_point.position.z - volume.z, spawn_point.position.z + volume.z));
-            GameObject obj = Instantiate(prefabs, pos, Quaternion.identity);
+            if (true)
+            {
 
+            }
+            GameObject obj = Instantiate(prefabs, pos, Quaternion.identity);
+            spawn_count--;
             yield return new WaitForSeconds(spawn_delay);
         }
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Flower
   - Destroyed_invironment
+  - PlayerTag
+  - death_colider
   layers:
   - Default
   - TransparentFX

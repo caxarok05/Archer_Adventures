@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382577914
 GameObject:
@@ -223,8 +223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000010699, y: 91.003296}
-  m_SizeDelta: {x: 433.4055, y: 202.3325}
+  m_AnchoredPosition: {x: 0, y: 263}
+  m_SizeDelta: {x: 513.4056, y: 496.6086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382577916
 MonoBehaviour:
@@ -248,23 +248,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 91c6baec3cdb7e9428e37c0d70a98676, type: 3}
-    m_FontSize: 50
+    m_FontSize: 100
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 50
-    m_Alignment: 4
+    m_MinSize: 1
+    m_MaxSize: 130
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'REALLY NIGGA GAME
-
-
-    do you want to play?
-
-'
+  m_Text: "\u041F\u043E\u0448\u0451\u043B\n\t\t\u041D\u0430\u0445\u0443\u0439\n\t\t\tGame"
 --- !u!222 &382577917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -305,10 +300,10 @@ RectTransform:
   m_Father: {fileID: 731322822}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 606, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686032594
 MonoBehaviour:
@@ -332,18 +327,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 64097e465018480479e8c360e9e57697, type: 3}
-    m_FontSize: 50
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 50
+    m_MinSize: 0
+    m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY
+  m_Text: "\u043F\u043E\u0439\u0442\u0438 \u043D\u0430\u0445\u0443\u0439"
 --- !u!222 &686032595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -388,8 +383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.4772, y: -65}
-  m_SizeDelta: {x: 396.9141, y: 83.6217}
+  m_AnchoredPosition: {x: 0, y: -56}
+  m_SizeDelta: {x: 605.61, y: 127.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &731322823
 MonoBehaviour:
@@ -581,7 +576,7 @@ RectTransform:
   - {fileID: 1761741972}
   - {fileID: 2114436499}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -629,7 +624,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1395933396
 GameObject:
@@ -701,7 +696,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: "\u041F\u043E\u0439\u0442\u0438 \u0434\u0435\u043B\u0430\u0442\u044C \u0443\u0440\u043E\u043A\u0438"
 --- !u!222 &1395933399
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -797,11 +792,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690287791}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1836190088}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1761741971
 GameObject:
@@ -835,10 +830,10 @@ RectTransform:
   m_Father: {fileID: 1246493552}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194.27141, y: -612.82104}
-  m_SizeDelta: {x: 315.4572, y: 38.3579}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 157.7286, y: 19.178955}
+  m_SizeDelta: {x: 315.4572, y: 38.35791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761741973
 MonoBehaviour:
@@ -918,7 +913,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 0.107173085, b: 0, a: 0}
+  m_BackGroundColor: {r: 0, g: 1, b: 0.031685114, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -961,7 +956,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1690287793}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1001,8 +997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -185}
-  m_SizeDelta: {x: 240.8467, y: 79.9058}
+  m_AnchoredPosition: {x: -0.0000076293945, y: -200}
+  m_SizeDelta: {x: 467.5206, y: 79.9058}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2114436501
 MonoBehaviour:
@@ -1073,7 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23315065, g: 0.8679245, b: 0.17522249, a: 1}
+  m_Color: {r: 0.9056604, g: 0.8234608, b: 0.40498397, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

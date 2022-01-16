@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ObjectDestroyer : MonoBehaviour
 {
-    private GameObject Player_prefab;
+    private GameObject _player_prefab;
 
-    private void Start()
+    private void Awake()
     {
-        Player_prefab = GameObject.Find("Camera");
+       _player_prefab = GameObject.Find("Camera");
     }
+
     private void Update()
     {
-
-        if (gameObject.transform.position.z + 30 < Player_prefab.transform.position.z)
+        if (gameObject.transform.position.z + 60 < _player_prefab.transform.position.z)
         {
             Destroy(gameObject);
         }

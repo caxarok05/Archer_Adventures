@@ -4,45 +4,25 @@ using UnityEngine;
 
 public class TileSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] tilePrefabs;
-    private List<GameObject> activeTiles = new List<GameObject>();
-    private float spawnPos = 0;
-    private float tileLength = 40;
+    [SerializeField] private GameObject _tilePrefab;
+    [SerializeField] private float _tileLength = 40;
+    [SerializeField] private Transform _player;
 
+    private float _spawnPos = 0;
+    private int _startTiles = 10;
 
-    [SerializeField] private Transform player;
-    private int startTiles = 10;
-
-    
-    void Start()
+    private void Update()
     {
-        for (int i = 0; i < startTiles; i++)
+        if (_player.position.z > _spawnPos - (_tileLength * _startTiles))
         {
-            SpawnTile(0);
-        }
+            SpawnTile();        
+        }  
     }
 
-    void Update()
+    private void SpawnTile()
     {
-        if (player.position.z - 55 > spawnPos - (startTiles * tileLength))
-        {
-            //SpawnTile(Random.Range(0, tilePrefabs.Length));
-            SpawnTile(0);
-            Invoke("DeleteTile", 3f);
-           
-        }
-    }
-
-    private void SpawnTile(int tileIndex)
-    {
-        GameObject nextTile = Instantiate(tilePrefabs[tileIndex], transform.forward * spawnPos, transform.rotation);
-        activeTiles.Add(nextTile);
-        spawnPos += tileLength;
-    }
-    private void DeleteTile()
-    {
-        Destroy(activeTiles[0]);
-        activeTiles.RemoveAt(0);
+        GameObject nextTile = Instantiate(_tilePrefab, transform.forward * _spawnPos, transform.rotation);
+        _spawnPos += _tileLength;
     }
 }
 

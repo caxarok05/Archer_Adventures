@@ -253,6 +253,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec40d7f9796e6b648abb8e85d25cf4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationPoint: {x: 0, y: 0, z: 1}
-  Speed: 0.7
   acceleration: 0.0005

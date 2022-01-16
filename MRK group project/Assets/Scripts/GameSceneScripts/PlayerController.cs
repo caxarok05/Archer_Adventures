@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Vector3 destinationPoint;
-
-    public float Speed;
-    public float acceleration;
-    void FixedUpdate()
+    [SerializeField] private float acceleration;
+    private float Speed = 0.7f;
+    private Vector3 destinationPoint = Vector3.forward;
+      
+    private void FixedUpdate()
     {
         transform.Translate(destinationPoint * Speed);        
         if (Speed < 1.25f)

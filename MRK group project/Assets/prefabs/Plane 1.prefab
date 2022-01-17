@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 489373143555397810}
   - component: {fileID: 489373143555397809}
   - component: {fileID: 6899233405585324710}
+  - component: {fileID: 2666025205803696865}
   - component: {fileID: 3207045019925854654}
   m_Layer: 0
   m_Name: Right plane
@@ -109,22 +110,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798a75a126e19794f8627f17d5569403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn_delay: 0.005
-  prefab_flower:
-  - {fileID: 3410512451813205425, guid: cec8e47e81d7a87479597820a32d49ab, type: 3}
-  - {fileID: 5631469753180194976, guid: 1f82cf60c49a3874e8129ec4d971e50a, type: 3}
-  - {fileID: 3846781822977122490, guid: 66340ff82aa6edc4788337565912c79d, type: 3}
-  prefab_tree:
+  _prefab_tree:
+  - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
+  - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
+  - {fileID: 7936582196409704649, guid: 2e13db2bf0ad9b94dbd1582a759af5b7, type: 3}
   - {fileID: 7936582196409704649, guid: 2e13db2bf0ad9b94dbd1582a759af5b7, type: 3}
   - {fileID: 4642883450059692733, guid: f991c1887b49d35418743a47f9325678, type: 3}
-  - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
-  - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
-  - {fileID: 7936582196409704649, guid: 2e13db2bf0ad9b94dbd1582a759af5b7, type: 3}
-  spawn_point_flowers: {fileID: 1475355397459082297}
-  spawn_point_trees: {fileID: 7670699001907363431}
-  volume: {x: 0.45, y: 0, z: 40}
-  spawn_count_trees: 2
-  spawn_count_flowers: 5
+  _spawn_point_trees: {fileID: 7670699001907363431}
+  _volume: {x: 0.45, y: 0, z: 40}
+--- !u!114 &2666025205803696865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489373143555397815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7d897358fa1974882f6e0d29c99423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab_flower:
+  - {fileID: 3410512451813205425, guid: cec8e47e81d7a87479597820a32d49ab, type: 3}
+  - {fileID: 3846781822977122490, guid: 66340ff82aa6edc4788337565912c79d, type: 3}
+  - {fileID: 5631469753180194976, guid: 1f82cf60c49a3874e8129ec4d971e50a, type: 3}
+  _spawn_point_flowers: {fileID: 1475355397459082297}
+  _volume: {x: 0.45, y: 0, z: 40}
 --- !u!114 &3207045019925854654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +313,7 @@ GameObject:
   - component: {fileID: 489373144289178748}
   - component: {fileID: 489373144289178739}
   - component: {fileID: 2125847869227774242}
+  - component: {fileID: 8940651376740390499}
   - component: {fileID: 6939539944387605438}
   m_Layer: 0
   m_Name: Left plane
@@ -398,22 +410,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798a75a126e19794f8627f17d5569403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn_delay: 0.005
-  prefab_flower:
-  - {fileID: 3410512451813205425, guid: cec8e47e81d7a87479597820a32d49ab, type: 3}
-  - {fileID: 5631469753180194976, guid: 1f82cf60c49a3874e8129ec4d971e50a, type: 3}
-  - {fileID: 3846781822977122490, guid: 66340ff82aa6edc4788337565912c79d, type: 3}
-  prefab_tree:
+  _prefab_tree:
   - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
+  - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
+  - {fileID: 7936582196409704649, guid: 2e13db2bf0ad9b94dbd1582a759af5b7, type: 3}
   - {fileID: 7936582196409704649, guid: 2e13db2bf0ad9b94dbd1582a759af5b7, type: 3}
   - {fileID: 4642883450059692733, guid: f991c1887b49d35418743a47f9325678, type: 3}
-  - {fileID: 8278259096842259956, guid: 3c4af356f46d8b446b0a6ea501dd37b0, type: 3}
-  - {fileID: 7936582196409704649, guid: 2e13db2bf0ad9b94dbd1582a759af5b7, type: 3}
-  spawn_point_flowers: {fileID: 3205756376943654402}
-  spawn_point_trees: {fileID: 3297293779624852127}
-  volume: {x: 0.45, y: 0, z: 40}
-  spawn_count_trees: 2
-  spawn_count_flowers: 5
+  _spawn_point_trees: {fileID: 3297293779624852127}
+  _volume: {x: 0.45, y: 0, z: 40}
+--- !u!114 &8940651376740390499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489373144289178737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7d897358fa1974882f6e0d29c99423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab_flower:
+  - {fileID: 3846781822977122490, guid: 66340ff82aa6edc4788337565912c79d, type: 3}
+  - {fileID: 3410512451813205425, guid: cec8e47e81d7a87479597820a32d49ab, type: 3}
+  - {fileID: 5631469753180194976, guid: 1f82cf60c49a3874e8129ec4d971e50a, type: 3}
+  _spawn_point_flowers: {fileID: 3205756376943654402}
+  _volume: {x: 0.45, y: 0, z: 40}
 --- !u!114 &6939539944387605438
 MonoBehaviour:
   m_ObjectHideFlags: 0

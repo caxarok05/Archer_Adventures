@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeSpawner : MonoBehaviour
+public class EnvironmentSpawner : MonoBehaviour
 {
 
     [SerializeField] private List<GameObject> _prefab_tree = new List<GameObject>();
     [SerializeField] private Transform _spawn_point_trees;
     [SerializeField] private Vector3 _volume;
 
-    private int _spawn_count_trees = 2;
+    private int _spawn_count_trees = 5;
     private float _spawn_delay = 0.005f;
 
 
     private void Update()
     {
-        Invoke("Tree_spawner", _spawn_delay);
+        Invoke("Tree_spawner()", _spawn_delay);
     }
  
     private void Tree_spawner()

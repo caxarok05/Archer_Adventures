@@ -9,11 +9,10 @@ public class FlowerSpawner : MonoBehaviour
     [SerializeField] private Vector3 _volume;
 
     private int _spawn_count_flowers = 5;
-    private float _spawn_delay = 0.005f;
     
     private void Update()
     {
-        Invoke("Flower_spawner", _spawn_delay);      
+        Flower_spawner();
     }
 
     private void Flower_spawner()

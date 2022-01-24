@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3909965234221493950}
   - component: {fileID: 3909965234221493948}
+  - component: {fileID: 7775520620816537929}
   m_Layer: 0
   m_Name: Deathcolider
   m_TagString: death_colider
@@ -44,6 +45,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7775520620816537929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909965234221493951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4b09d23fdeeb741b7d82a3aba96b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heart_numbers: 3
+  _heart_prefabs:
+  - {fileID: 4488939440464690157, guid: 2b23f5c3e20019944a559b2032cc2235, type: 3}
+  - {fileID: 8420605498931289389, guid: d07dc377813b19142b8f43aa0fc79503, type: 3}
+  - {fileID: 2409545485125503893, guid: 4c894003507e1524cb32659550c4bec0, type: 3}
+  DeathPanel: {fileID: 2237480397611285860, guid: 1e21d3c9e94d7164a8054f58f5c2d048, type: 3}
 --- !u!1 &8111542679312811256
 GameObject:
   m_ObjectHideFlags: 0

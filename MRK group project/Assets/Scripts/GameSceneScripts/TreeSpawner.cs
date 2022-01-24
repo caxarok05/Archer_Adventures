@@ -10,12 +10,11 @@ public class EnvironmentSpawner : MonoBehaviour
     [SerializeField] private Vector3 _volume;
 
     private int _spawn_count_trees = 5;
-    private float _spawn_delay = 0.005f;
 
 
     private void Update()
     {
-        Invoke("Tree_spawner()", _spawn_delay);
+        Tree_spawner();
     }
  
     private void Tree_spawner()

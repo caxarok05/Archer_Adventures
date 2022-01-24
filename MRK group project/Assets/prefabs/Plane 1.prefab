@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de34574971fb69f419b2ec5a85dac317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabs:
+  _prefab_enemy:
   - {fileID: 9026586040612509363, guid: 16f64c798b9f8384c823b53e3de095e9, type: 3}
-  _spawn_point: {fileID: 4503146732966326052}
+  _spawn_point_enemy: {fileID: 4503146732966326052}
   _volume_Z: 20
 --- !u!1 &489373143818627300
 GameObject:
@@ -448,9 +448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de34574971fb69f419b2ec5a85dac317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabs:
+  _prefab_enemy:
   - {fileID: 9026586040612509363, guid: 16f64c798b9f8384c823b53e3de095e9, type: 3}
-  _spawn_point: {fileID: 2437263719150834194}
+  _spawn_point_enemy: {fileID: 2437263719150834194}
   _volume_Z: 20
 --- !u!1 &489373144463959870
 GameObject:

@@ -22,7 +22,7 @@ public class FlowerSpawner : MonoBehaviour
             GameObject prefabs = _prefab_flower[Random.Range(0, _prefab_flower.Count)];
             _spawn_count_flowers--;
             Vector3 pos = new Vector3(Random.Range(_spawn_point_flowers.position.x - _volume.x, _spawn_point_flowers.position.x + _volume.x), _spawn_point_flowers.position.y, Random.Range(_spawn_point_flowers.position.z - _volume.z, _spawn_point_flowers.position.z + _volume.z));
-            GameObject obj = Instantiate(prefabs, pos, Quaternion.identity);
+            Instantiate(prefabs, pos, Quaternion.identity);
            
         }
     }

@@ -58,11 +58,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _heart_numbers: 3
-  _heart_prefabs:
-  - {fileID: 4488939440464690157, guid: 2b23f5c3e20019944a559b2032cc2235, type: 3}
-  - {fileID: 8420605498931289389, guid: d07dc377813b19142b8f43aa0fc79503, type: 3}
-  - {fileID: 2409545485125503893, guid: 4c894003507e1524cb32659550c4bec0, type: 3}
-  DeathPanel: {fileID: 2237480397611285860, guid: 1e21d3c9e94d7164a8054f58f5c2d048, type: 3}
+  _list: []
+  _deathPanel: {fileID: 0}
+  heart_image: {fileID: 0}
 --- !u!1 &8111542679312811256
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &406638977545713387
 Transform:
   m_ObjectHideFlags: 0
@@ -273,3 +271,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 0.0005
+  Speed: 0.7

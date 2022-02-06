@@ -21,7 +21,7 @@ public class TileSpawner : MonoBehaviour
 
     private void SpawnTile()
     {
-        GameObject nextTile = Instantiate(_tilePrefab, transform.forward * _spawnPos, transform.rotation);
+        Instantiate(_tilePrefab, transform.forward * _spawnPos, transform.rotation);
         _spawnPos += _tileLength;
     }
 }

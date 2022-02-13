@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentSpawner : MonoBehaviour
+public class TreeSpawner : MonoBehaviour
 {
 
     [SerializeField] private List<GameObject> _prefab_tree = new List<GameObject>();
     [SerializeField] private Transform _spawn_point_trees;
     [SerializeField] private Vector3 _volume;
 
-    private int _spawn_count_trees = 5;
+    private int _spawn_count_trees = 2;
 
 
     private void Update()

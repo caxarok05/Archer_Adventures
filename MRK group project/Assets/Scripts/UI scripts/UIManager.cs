@@ -16,13 +16,13 @@ public class UIManager: MonoBehaviour
         Application.Quit();
     }
 
-    public void PausePanelOn(GameObject PausePanel)
+    public void PanelOn(GameObject PausePanel)
     {
         Time.timeScale = 0;
         PausePanel.SetActive(true);
     }
 
-    public void PausePanelOff(GameObject PausePanel)
+    public void PanelOff(GameObject PausePanel)
     {
         Time.timeScale = 1;
         PausePanel.SetActive(false);

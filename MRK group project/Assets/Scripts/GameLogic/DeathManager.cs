@@ -7,23 +7,46 @@ using UnityEngine.UI;
 public class DeathManager : MonoBehaviour
 {
     [SerializeField] protected int _heart_numbers = 3;
+    [SerializeField] private int _max_hearts = 9;
     [SerializeField] protected List<GameObject> _heart_prefabs = new List<GameObject>();
     [SerializeField] private GameObject _deathPanel;
     private int _deathCounter = 0;
 
     [SerializeField] protected GameObject heart_image;
 
-    private void Awake() => EventSystem.singleton.AddingHpTrigger += AddingHP;
-
-    private void OnTriggerEnter()
+    private void Awake()
     {
-        _deathCounter++;
-        _heart_prefabs[_heart_numbers - _deathCounter].SetActive(false);
-        if (_deathCounter == _heart_numbers)
+        //EventSystem.singleton.AddingHpTrigger += AddingHP;
+        ////DataHolder.EventHolder += AddingHP;
+        //if (EventSystem.Event_counter > _heart_numbers)
+        //{
+        //    AddingHP();
+        //}
+        for (int i = BusterManager.Event_counter; i > _max_hearts; i--)
+        {
+            AddingHP();
+        }
+        //_heart_numbers = EventSystem.Event_counter;
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.CompareTag("Enemy"))
+        {
+            _deathCounter++;
+            _heart_prefabs[_heart_numbers - _deathCounter].SetActive(false);
+            if (_deathCounter == _heart_numbers)
+            {
+                Time.timeScale = 0;
+                _deathPanel.SetActive(true);
+            }
+        }
+        if (collider.gameObject.CompareTag("Log"))
         {
             Time.timeScale = 0;
-            _deathPanel.SetActive(true);       
+            _deathPanel.SetActive(true);
         }
+        
 
     }
     private void AddingHP()

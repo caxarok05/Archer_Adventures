@@ -58,7 +58,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _heart_numbers: 3
-  _list: []
+  _max_hearts: 9
+  _heart_prefabs: []
   _deathPanel: {fileID: 0}
   heart_image: {fileID: 0}
 --- !u!1 &8111542679312811256
@@ -178,7 +179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &406638977545713387
 Transform:
   m_ObjectHideFlags: 0

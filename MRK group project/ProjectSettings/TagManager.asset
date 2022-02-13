@@ -8,6 +8,8 @@ TagManager:
   - Destroyed_invironment
   - PlayerTag
   - death_colider
+  - Enemy
+  - Log
   layers:
   - Default
   - TransparentFX

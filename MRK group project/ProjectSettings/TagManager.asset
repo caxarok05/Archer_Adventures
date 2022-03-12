@@ -10,6 +10,10 @@ TagManager:
   - death_colider
   - Enemy
   - Log
+  - exitpanel
+  - BG_MUSIC_VOLUME_SLIDER
+  - BG_MUSIC_VOLUME_TEXT
+  - BG_CREATED
   layers:
   - Default
   - TransparentFX

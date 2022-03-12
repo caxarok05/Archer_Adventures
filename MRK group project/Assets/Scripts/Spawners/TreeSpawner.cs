@@ -21,10 +21,10 @@ public class TreeSpawner : MonoBehaviour
     {
         while (_spawn_count_trees > 0)
         {
-            GameObject prefabs = _prefab_tree[Random.Range(0, _prefab_tree.Count)];
-            _spawn_count_trees--;
+            GameObject prefabs = _prefab_tree[Random.Range(0, _prefab_tree.Count)];      
             Vector3 pos = new Vector3(_spawn_point_trees.position.x, _spawn_point_trees.position.y, Random.Range(_spawn_point_trees.position.z - _volume.z, _spawn_point_trees.position.z + _volume.z));
-            Instantiate(prefabs, pos, Quaternion.identity);     
+            Instantiate(prefabs, pos, Quaternion.identity);
+            _spawn_count_trees--;
         }
 
     }

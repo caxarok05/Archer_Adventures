@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3909965234221493950}
   - component: {fileID: 3909965234221493948}
-  - component: {fileID: 7775520620816537929}
+  - component: {fileID: 4139493712032591187}
   m_Layer: 0
   m_Name: Deathcolider
   m_TagString: death_colider
@@ -43,9 +43,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.88933325, y: 0.3212264, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7775520620816537929
+--- !u!114 &4139493712032591187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,9 +58,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _heart_numbers: 3
-  _max_hearts: 9
-  _heart_prefabs: []
+  _max_hearts: 3
+  _heart_prefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _deathPanel: {fileID: 0}
+  hero: {fileID: 8868296303779423696}
+  _pauseButton: {fileID: 0}
+  _timedilation: {fileID: 0}
   heart_image: {fileID: 0}
 --- !u!1 &8111542679312811256
 GameObject:
@@ -74,6 +86,7 @@ GameObject:
   - component: {fileID: 2877778422397156757}
   - component: {fileID: 1376679061561097382}
   - component: {fileID: 5526115791514512304}
+  - component: {fileID: 6952130378405612286}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -160,6 +173,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   ScoreText: {fileID: 0}
+--- !u!114 &6952130378405612286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8111542679312811256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541748f03dcb9234f9d304917e14b315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8868296303779423696}
 --- !u!1 &8868296303779423696
 GameObject:
   m_ObjectHideFlags: 0

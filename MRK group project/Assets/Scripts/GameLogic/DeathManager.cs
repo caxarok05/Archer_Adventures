@@ -12,6 +12,15 @@ public class DeathManager : MonoBehaviour
     [SerializeField] private GameObject _deathPanel;
     private int _deathCounter = 0;
 
+
+
+    public GameObject hero;
+    private PlayerController playerController;
+    public Button _pauseButton;
+    public Button _timedilation;
+    //Решение временное, необходимо написать свою систему через ивенты
+
+
     [SerializeField] protected GameObject heart_image;
 
     private void Awake()
@@ -22,29 +31,38 @@ public class DeathManager : MonoBehaviour
         //{
         //    AddingHP();
         //}
-        for (int i = BusterManager.Event_counter; i > _max_hearts; i--)
+        for (int i = AddingHearts.Event_counter; i > _max_hearts; i--)
         {
             AddingHP();
         }
+        playerController = hero.GetComponent<PlayerController>();
         //_heart_numbers = EventSystem.Event_counter;
     }
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.CompareTag("Enemy"))
+        if (collider.gameObject.transform.childCount != 0 && collider.gameObject.CompareTag("Enemy"))
         {
             _deathCounter++;
             _heart_prefabs[_heart_numbers - _deathCounter].SetActive(false);
             if (_deathCounter == _heart_numbers)
             {
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
+                playerController.enabled = false;
                 _deathPanel.SetActive(true);
+                _pauseButton.enabled = false;
+                _timedilation.enabled = false;
+                MoneyScript.AddMoney();
             }
         }
-        if (collider.gameObject.CompareTag("Log"))
+        if (collider.gameObject.transform.childCount != 0 && collider.gameObject.CompareTag("Log"))
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            playerController.enabled = false;
             _deathPanel.SetActive(true);
+            _pauseButton.enabled = false;
+            _timedilation.enabled = false;
+            MoneyScript.AddMoney();
         }
         
 

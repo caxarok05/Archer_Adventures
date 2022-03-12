@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;                 
+
 
 public class UIManager: MonoBehaviour
 {
@@ -16,15 +18,23 @@ public class UIManager: MonoBehaviour
         Application.Quit();
     }
 
-    public void PanelOn(GameObject PausePanel)
-    {
-        Time.timeScale = 0;
-        PausePanel.SetActive(true);
-    }
-
     public void PanelOff(GameObject PausePanel)
     {
-        Time.timeScale = 1;
-        PausePanel.SetActive(false);
+        if (PausePanel.activeSelf == true)
+        {
+            Time.timeScale = 1;
+            PausePanel.SetActive(false);
+        }
     }
+
+    public void PanelOn(GameObject PausePanel)
+    {
+        if (PausePanel.activeSelf == false)
+        {
+            Time.timeScale = 1;
+            PausePanel.SetActive(true);
+        }
+    }
+
+
 }

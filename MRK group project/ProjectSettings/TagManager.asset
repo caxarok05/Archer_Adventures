@@ -11,9 +11,7 @@ TagManager:
   - Enemy
   - Log
   - exitpanel
-  - BG_MUSIC_VOLUME_SLIDER
-  - BG_MUSIC_VOLUME_TEXT
-  - BG_CREATED
+  - BGMusicCreated
   layers:
   - Default
   - TransparentFX

@@ -27,7 +27,10 @@ public class SliderScript : MonoBehaviour
             _musicSlider.value = PlayerPrefs.GetFloat(_musicSaveVolumeKey);
 
         }
-        
+
+        //_musicSlider = GameObject.FindWithTag("MusicTag").GetComponent<Slider>();
+        //_sfxSlider = GameObject.FindWithTag("SfxTag").GetComponent<Slider>();
+
 
     }
     public void ChangeSfx(float _volume)

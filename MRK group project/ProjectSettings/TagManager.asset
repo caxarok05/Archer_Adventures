@@ -12,6 +12,9 @@ TagManager:
   - Log
   - exitpanel
   - BGMusicCreated
+  - MusicTag
+  - SfxTag
+  - MoneyText
   layers:
   - Default
   - TransparentFX

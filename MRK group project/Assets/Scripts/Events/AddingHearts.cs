@@ -6,48 +6,39 @@ using UnityEngine.UI;
 
 public class AddingHearts : MonoBehaviour
 {
-
-
-    //public static EventSystem singleton;
-    //private void Awake()
-    //{
-    //    singleton = this;
-    //}
-
-    //public event Action AddingHpTrigger;
-    private static int PressLimit = 0;
+    [SerializeField] private int _upgradeNumber;
+    [SerializeField] private List<string> _upgradePrices = new List<string>();
+    [SerializeField] private Button _upgradeButton;
+    [SerializeField] private Text _upgradeText;
+    private static int _currentUpgrade = 0;
     public static int Event_counter = 3;
-    public Button AddHPButton;
 
-    private void Start()
+    private void Awake()
     {
-        if (PressLimit >= 6)
+        _currentUpgrade = PlayerPrefs.GetInt("HPCountKey");
+        _upgradeText.text = _upgradePrices[_currentUpgrade].ToString();
+    }
+    private void Update()
+    {
+        if (_currentUpgrade >= _upgradeNumber || MoneyScript.Money - int.Parse(_upgradePrices[_currentUpgrade]) < 0)
         {
-            AddHPButton.interactable = false;
+            _upgradeButton.interactable = false;
         }
     }
     public void Adding_Hp()
     {
-        if (PressLimit >= 6)
-        {
-            AddHPButton.interactable = false;
-        }
-        else
-        {
-            AddingHearts.Event_counter++;
-            PressLimit++;
-        }
-        
-        //if (AddingHpTrigger != null)
-        //{
-        //    AddingHpTrigger();
+        MoneyScript.Money -= int.Parse(_upgradePrices[_currentUpgrade]);
+        MoneyScript.RefreshValue();
+        Event_counter++;    
+        _currentUpgrade++;      
+        _upgradeText.text = _upgradePrices[_currentUpgrade].ToString();
 
-        //}
-        //DataHolder.EventHolder += AddingHpTrigger;
-        
-        //Debug.Log(Event_counter);
-
+        if (_currentUpgrade >= _upgradeNumber)
+        {
+            _upgradeButton.interactable = false;
+            _upgradeText.text = _upgradePrices[_upgradePrices.Count - 1].ToString();
+        }
+        PlayerPrefs.SetInt("HPCountKey", _currentUpgrade);
     }
-
-    
+  
 }

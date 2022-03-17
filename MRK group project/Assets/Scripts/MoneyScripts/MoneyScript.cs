@@ -10,6 +10,7 @@ public class MoneyScript : MonoBehaviour
 
     private void Awake()
     {
+        
         _moneyText = GameObject.FindWithTag("MoneyText").GetComponent<Text>();
         Money = PlayerPrefs.GetInt("MoneyKey");
         _moneyText.text = Money.ToString();

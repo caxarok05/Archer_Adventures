@@ -33,7 +33,7 @@ public class DeathManager : MonoBehaviour
         //}
         for (int i = AddingHearts.Event_counter; i > _max_hearts; i--)
         {
-            AddingHP();
+            AddingHP(); 
         }
         playerController = hero.GetComponent<PlayerController>();
         //_heart_numbers = EventSystem.Event_counter;

@@ -6,23 +6,31 @@ using UnityEngine.UI;
 public class TimeDilationBuster : MonoBehaviour
 {
     [SerializeField] private Button TimeDilationButton;
-    private int _timeShiftCounter = 2;
+    private int _timeDilationCounter = 2;
 
     public void TimeDilation()
     {
-        if (_timeShiftCounter != 0 && TimeDilationButton.interactable == true)
+        if (_timeDilationCounter != 0 && TimeDilationButton.interactable == true)
         {
             TimeDilationButton.interactable = false;
-            _timeShiftCounter--;
+            _timeDilationCounter--;
             Time.timeScale = 0.4f;
             Invoke("ReturnTime", 0.8f);
 
         }
     }
 
+    private void Awake()
+    {
+        TimeDilationButton.interactable = false;
+        if (BuyTimeDilationScript._currentUpgrade > 0)
+        {
+            TimeDilationButton.interactable = true;
+        }
+    }
     private void Update()
     {
-        if (_timeShiftCounter == 0)
+        if (_timeDilationCounter == 0)
         {
             TimeDilationButton.interactable = false;
         }
@@ -34,4 +42,5 @@ public class TimeDilationBuster : MonoBehaviour
         //TimeShiftText.text = $"{TimeShiftCounter}/2";
         TimeDilationButton.interactable = true;
     }
+
 }

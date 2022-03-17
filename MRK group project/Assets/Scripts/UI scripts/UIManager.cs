@@ -36,5 +36,11 @@ public class UIManager: MonoBehaviour
         }
     }
 
+    public void ResetProgress()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 
 }

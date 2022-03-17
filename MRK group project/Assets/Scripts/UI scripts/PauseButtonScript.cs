@@ -28,7 +28,7 @@ public class PauseButtonScript : MonoBehaviour
             Time.timeScale = 0;
             _pausePanel.SetActive(true);
             _status = MenuStatus.Opened;
-            _timedilation.enabled = false;
+            //_timedilation.enabled = false;
         }
     }
 

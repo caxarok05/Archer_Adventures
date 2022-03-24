@@ -1,2 +1,2 @@
 # Archer_adventure
-Unity arcade game repos, It will commit changes in our development, use it only after the management's warning. Description will be update during development. Follow changes. 
+Unity arcade game repos, This repos will save all code changes during development. After publishing the game there will be link to google play market where you'll can download it for free. Description may updating during development. Follow changes. 

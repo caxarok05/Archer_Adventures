@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MoneyScript : MonoBehaviour
 {
     [HideInInspector] public static int Money = 0;
+
     private static Text _moneyText;
 
     private void Awake()

@@ -6,14 +6,20 @@ using UnityEngine.Audio;
 
 public class SliderScript : MonoBehaviour
 {
-
     [SerializeField] private AudioMixer _mixer;
-    [SerializeField] private string _musicMixerGroup;
+
+    [Header ("SFX Volume")]
+
     [SerializeField] private string _sfxMixerGroup;
-    [SerializeField] private Slider _musicSlider;
     [SerializeField] private Slider _sfxSlider;
-    [SerializeField] private static string _musicSaveVolumeKey = "MUSIC_KEY";
     [SerializeField] private static string _sfxSaveVolumeKey = "SFX_KEY";
+
+    [Header("Music Volume")]
+
+    [SerializeField] private string _musicMixerGroup;    
+    [SerializeField] private Slider _musicSlider;   
+    [SerializeField] private static string _musicSaveVolumeKey = "MUSIC_KEY";
+    
 
     private void Awake()
     {
@@ -43,34 +49,4 @@ public class SliderScript : MonoBehaviour
         _mixer.SetFloat(_musicMixerGroup, Mathf.Log10(_volume) * 20);
         PlayerPrefs.SetFloat(_musicSaveVolumeKey, _musicSlider.value);
     }
-
-
-
-
-
-
-
-
-
-
-    //[Header("Components")]
-    //[SerializeField] private Slider _slider;
-    //[SerializeField] private AudioSource _audio;
-
-    //[Header("Keys")]
-    //
-
-    //[Header("Parameters")]
-    //[SerializeField] private float _volume;
-
-    //private void Awake()
-    //{
-    //    _volume = PlayerPrefs.GetFloat(_saveVolumeKey);
-    //}
-    //public void ChangeVolume()
-    //{
-    //    _volume = _slider.value;
-    //    _audio.volume = _volume;
-    //    PlayerPrefs.SetFloat(_saveVolumeKey, _volume);
-    //}
 }

@@ -21,7 +21,7 @@ public class LogSpawner : MonoBehaviour
         Log_spawner();
     }
 
-    protected void Log_spawner()
+    private void Log_spawner()
     {
             while (_isSpawned && _spawnCountLogs > 0)
             {

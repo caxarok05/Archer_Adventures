@@ -6,12 +6,20 @@ using UnityEngine.UI;
 
 public class AddingHearts : MonoBehaviour
 {
+    public static int Event_counter = 3;
+
+    [Header("Hearts prices")]
+
     [SerializeField] private int _upgradeNumber;
     [SerializeField] private List<string> _upgradePrices = new List<string>();
+    
+
+    [Header ("Hearts UI")]
+
     [SerializeField] private Button _upgradeButton;
     [SerializeField] private Text _upgradeText;
+
     private static int _currentUpgrade = 0;
-    public static int Event_counter = 3;
 
     private void Awake()
     {

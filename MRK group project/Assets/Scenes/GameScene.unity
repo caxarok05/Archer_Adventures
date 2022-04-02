@@ -5052,6 +5052,10 @@ PrefabInstance:
       propertyPath: _heart_prefabs.Array.data[8]
       value: 
       objectReference: {fileID: 1318262788}
+    - target: {fileID: 4623835201504611616, guid: 7e70578b959254848b8fc59d9ac5e30d, type: 3}
+      propertyPath: _arrowPrefab
+      value: 
+      objectReference: {fileID: 595384903332366168, guid: fda3fc4a6397cc14ca41f5975468e10a, type: 3}
     - target: {fileID: 4748101544780427841, guid: 7e70578b959254848b8fc59d9ac5e30d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.059999943

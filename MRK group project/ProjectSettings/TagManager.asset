@@ -15,6 +15,7 @@ TagManager:
   - MusicTag
   - SfxTag
   - MoneyText
+  - ArrowTag
   layers:
   - Default
   - TransparentFX

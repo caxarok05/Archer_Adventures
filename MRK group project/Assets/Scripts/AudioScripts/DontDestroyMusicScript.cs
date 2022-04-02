@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class DontDestroyMusicScript : MonoBehaviour
 {
-    //[SerializeField] private AudioSource _bgMusic;
-    public string _bgTag;
+    [SerializeField] private string _bgTag;
 
     private void Awake()
     {

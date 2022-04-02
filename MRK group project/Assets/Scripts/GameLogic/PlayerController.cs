@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float acceleration;
     [SerializeField] private float Speed = 0.7f;
     private Vector3 destinationPoint = Vector3.forward;
-      
+
     private void FixedUpdate()
     {
         transform.Translate(destinationPoint * Speed);        
@@ -16,4 +16,5 @@ public class PlayerController : MonoBehaviour
             Speed += acceleration;
         }
     }
+    
 }

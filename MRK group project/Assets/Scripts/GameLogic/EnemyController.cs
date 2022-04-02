@@ -1,30 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Interfaces;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IClickable
 {
+
     [SerializeField] private List<AudioClip> _deathSounds = new List<AudioClip>();
     private AudioSource _enemyAudioSource;
-    private GameObject _target;
+    private GameObject _player;
     private CapsuleCollider _enemyCollider;
+
+
     private void Awake()
     {
         _enemyAudioSource = gameObject.GetComponent<AudioSource>();
         _enemyCollider = gameObject.GetComponent<CapsuleCollider>();
-        _target = GameObject.Find("hero");
+        _player = GameObject.Find("hero");
     }
-    void Update()
+    private void Update()
     {
-        transform.LookAt(_target.transform);
-
+        transform.LookAt(_player.transform);
     }
-    void OnMouseDown()
-    { 
-        ScoreScript.Instance.score++;
-        _enemyAudioSource.PlayOneShot(_deathSounds[Random.Range(0, _deathSounds.Count)]);
-        Destroy(gameObject.transform.Find("EnemyChild").gameObject);
-        _enemyCollider.enabled = false;
+    private void OnMouseDown()
+    {
+        Interact();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("ArrowTag"))
+        {
+            ScoreScript.Instance.score++;
+            _enemyAudioSource.PlayOneShot(_deathSounds[Random.Range(0, _deathSounds.Count)]);
+            Destroy(gameObject.transform.Find("EnemyChild").gameObject);
+            _enemyCollider.enabled = false;
+            Destroy(collision.gameObject);
+        }
+    }
+
+    public void Interact()
+    {
+        gameObject.GetComponent<ArrowSpawner>().CreateArrow(_player.transform, gameObject);
+        
     }
 
 }

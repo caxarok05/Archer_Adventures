@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 public class BuyTimeDilationScript : MonoBehaviour
 {
+    [Header("Time Dilation price")]
+
     [SerializeField] private int _upgradeNumber;
     [SerializeField] private List<string> _upgradePrices = new List<string>();
+
+    [Header("Time Dilation UI")]
+
     [SerializeField] private Button _upgradeButton;
     [SerializeField] private Text _upgradeText;
     public static int _currentUpgrade = 0;

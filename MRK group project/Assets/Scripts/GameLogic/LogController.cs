@@ -10,7 +10,7 @@ public class LogController : MonoBehaviour
     {
         _logAudioSource = gameObject.GetComponent<AudioSource>();
     }
-    void OnMouseDown()
+    private void OnMouseDown()
     {
         ScoreScript.Instance.score++;
         _logAudioSource.PlayOneShot(_deathSound);

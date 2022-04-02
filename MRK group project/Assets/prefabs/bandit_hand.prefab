@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 2971403881383918612}
   - component: {fileID: 8264855024673760213}
   - component: {fileID: 3290333783095718125}
+  - component: {fileID: 2947552402877407489}
   m_Layer: 0
   m_Name: bandit_hand
   m_TagString: Enemy
@@ -165,7 +166,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.85588074
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -271,3 +272,17 @@ CapsuleCollider:
   m_Height: 4.4791913
   m_Direction: 1
   m_Center: {x: 0.04086566, y: 2.0857165, z: -0.06283879}
+--- !u!114 &2947552402877407489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9026586040612509363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a30b8968e849d4884ef10d8ec3960c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _arrowPrefab: {fileID: 595384903332366168, guid: fda3fc4a6397cc14ca41f5975468e10a, type: 3}
+  _shotHeight: 2

@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
     public int score = 0;
-
     public static ScoreScript Instance;
 
-    public Text ScoreText;
+    [SerializeField] private Text ScoreText;
 
     private void Awake()
     {

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ShowFPS : MonoBehaviour
 {
-    public static float fps;
+    public static float Fps;
 
     void OnGUI()
     {
-        fps = 1.0f / Time.deltaTime;
-        GUILayout.Label("FPS: " + (int)fps);
+        Fps = 1.0f / Time.deltaTime;
+        GUILayout.Label("FPS: " + (int)Fps);
     }
 }

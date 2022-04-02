@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExitPanel : MonoBehaviour
 {
     [SerializeField] private GameObject _exitPanel;
-    void Update()
+    private void Update()
     {
         if (Application.platform == RuntimePlatform.Android)
         {
@@ -14,19 +14,10 @@ public class ExitPanel : MonoBehaviour
                 _exitPanel.SetActive(true);
             }
         }
-        //    if (Input.GetKeyUp(KeyCode.Escape))
-        //{
-        //    _exitPanel.SetActive(true);
-        //}
     }
 
     public void ExitPanelClose()
     {
         _exitPanel.SetActive(false);
-        //if (_exitPanel.activeSelf == true)
-        //{
-        //    Time.timeScale = 1;
-        //    _exitPanel.SetActive(false);
-        //}
     }
 }

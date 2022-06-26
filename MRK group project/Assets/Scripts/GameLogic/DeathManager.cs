@@ -31,29 +31,24 @@ public class DeathManager : MonoBehaviour
         }
         playerController = hero.GetComponent<PlayerController>();
     }
+    private void Update()
+    {
+        if (_deathCounter == _heart_numbers)
+        {
+            DeathScreenON();
+        }
+    }
 
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.transform.childCount != 0 && collider.gameObject.CompareTag("Enemy"))
         {
-            _deathCounter++;
-            _heart_prefabs[_heart_numbers - _deathCounter].SetActive(false);
-            if (_deathCounter == _heart_numbers)
-            {
-                playerController.enabled = false;
-                _deathPanel.SetActive(true);
-                _pauseButton.enabled = false;
-                _timedilation.enabled = false;
-                MoneyScript.AddMoney();
-            }
+            LoseHP();
+            
         }
         if (collider.gameObject.transform.childCount != 0 && collider.gameObject.CompareTag("Log"))
         {
-            playerController.enabled = false;
-            _deathPanel.SetActive(true);
-            _pauseButton.enabled = false;
-            _timedilation.enabled = false;
-            MoneyScript.AddMoney();
+            DeathScreenON();
         }
         
 
@@ -65,5 +60,18 @@ public class DeathManager : MonoBehaviour
 
     }
 
-    
+    public void LoseHP()
+    {
+        _deathCounter++;
+        _heart_prefabs[_heart_numbers - _deathCounter].SetActive(false);
+    }
+
+    private void DeathScreenON()
+    {
+        playerController.enabled = false;
+        _deathPanel.SetActive(true);
+        _pauseButton.enabled = false;
+        _timedilation.enabled = false;
+        MoneyScript.AddMoney();
+    }
 }

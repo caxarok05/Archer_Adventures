@@ -1802,7 +1802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a681a23ec939cb4db0b5b375b7b1904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeDilationButton: {fileID: 584747357}
+  _timeDilationButton: {fileID: 584747357}
 --- !u!82 &584747362
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2460,6 +2460,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &917462379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8868296303779423696, guid: 7e70578b959254848b8fc59d9ac5e30d, type: 3}
+  m_PrefabInstance: {fileID: 3909965235449277395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &999633858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,10 +2892,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mixer: {fileID: 24100000, guid: 21a0c4ae4800a574896afe36f051a963, type: 2}
-  _musicMixerGroup: MusicVolume
   _sfxMixerGroup: SfxVolume
-  _musicSlider: {fileID: 180652636}
   _sfxSlider: {fileID: 530676773}
+  _musicMixerGroup: MusicVolume
+  _musicSlider: {fileID: 180652636}
 --- !u!1 &1083296555
 GameObject:
   m_ObjectHideFlags: 0
@@ -5072,6 +5077,10 @@ PrefabInstance:
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 1626925297}
+    - target: {fileID: 6952130378405612286, guid: 7e70578b959254848b8fc59d9ac5e30d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 917462379}
     - target: {fileID: 8111542679312811256, guid: 7e70578b959254848b8fc59d9ac5e30d, type: 3}
       propertyPath: m_IsActive
       value: 1
